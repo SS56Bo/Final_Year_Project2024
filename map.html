@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_142bea24dabe5f3f72f6c238d1e10a65 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_142bea24dabe5f3f72f6c238d1e10a65" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_142bea24dabe5f3f72f6c238d1e10a65 = L.map(
+                "map_142bea24dabe5f3f72f6c238d1e10a65",
+                {
+                    center: [23.670989, 86.28704829411765],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_32d8ba219b4694fe7fd2c7029c94c11e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_32d8ba219b4694fe7fd2c7029c94c11e.addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var marker_23c2fea59c83b52173ef6c0c73688454 = L.marker(
+                [22.5829, 88.3428],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_672bfb42dc032acb6acf5077b7da9a2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_23c2fea59c83b52173ef6c0c73688454.setIcon(icon_672bfb42dc032acb6acf5077b7da9a2a);
+        
+    
+        var popup_aed94a743c91e19dd297cfa92ca314e4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d3b2aef1b3fc009940b9d8ae89ccbb71 = $(`<div id="html_d3b2aef1b3fc009940b9d8ae89ccbb71" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Howrah<br><b>Station Code:</b>  HWH </div>`)[0];
+                popup_aed94a743c91e19dd297cfa92ca314e4.setContent(html_d3b2aef1b3fc009940b9d8ae89ccbb71);
+            
+        
+
+        marker_23c2fea59c83b52173ef6c0c73688454.bindPopup(popup_aed94a743c91e19dd297cfa92ca314e4)
+        ;
+
+        
+    
+    
+            var marker_e76838ff077bd9f9c395cf10382fb0ea = L.marker(
+                [22.568, 88.3711],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_367d390863688a77de4621c6a912c8f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e76838ff077bd9f9c395cf10382fb0ea.setIcon(icon_367d390863688a77de4621c6a912c8f9);
+        
+    
+        var popup_2c054e2d6470a9e5f0f0d152349043ac = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ff0e011c4a9e428bdf44f5b26332692 = $(`<div id="html_3ff0e011c4a9e428bdf44f5b26332692" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Sealdah<br><b>Station Code:</b> SDAH</div>`)[0];
+                popup_2c054e2d6470a9e5f0f0d152349043ac.setContent(html_3ff0e011c4a9e428bdf44f5b26332692);
+            
+        
+
+        marker_e76838ff077bd9f9c395cf10382fb0ea.bindPopup(popup_2c054e2d6470a9e5f0f0d152349043ac)
+        ;
+
+        
+    
+    
+            var marker_460086420b2d1a2294401aafdf659295 = L.marker(
+                [26.6825, 88.443889],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_3e3f469dc47122703d930cb15fc1bd8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_460086420b2d1a2294401aafdf659295.setIcon(icon_3e3f469dc47122703d930cb15fc1bd8a);
+        
+    
+        var popup_cc10b19fa0e9a4a5ab6f9dfc993017a0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6fe743ff4eba743d11171ba4e6472770 = $(`<div id="html_6fe743ff4eba743d11171ba4e6472770" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> New Jalpaiguri<br><b>Station Code:</b> NJP</div>`)[0];
+                popup_cc10b19fa0e9a4a5ab6f9dfc993017a0.setContent(html_6fe743ff4eba743d11171ba4e6472770);
+            
+        
+
+        marker_460086420b2d1a2294401aafdf659295.bindPopup(popup_cc10b19fa0e9a4a5ab6f9dfc993017a0)
+        ;
+
+        
+    
+    
+            var marker_ba4da1d6cdc0d13050c084cf4b72b0f2 = L.marker(
+                [23.250041, 87.869995],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_1c35f54f03367508e35897b08d42c94e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ba4da1d6cdc0d13050c084cf4b72b0f2.setIcon(icon_1c35f54f03367508e35897b08d42c94e);
+        
+    
+        var popup_157ff9090c33bfb8bd7e6b87cf42982f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1e77181bba11146fc6baa078ca6ddb04 = $(`<div id="html_1e77181bba11146fc6baa078ca6ddb04" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Barddhaman<br><b>Station Code:</b> BWN</div>`)[0];
+                popup_157ff9090c33bfb8bd7e6b87cf42982f.setContent(html_1e77181bba11146fc6baa078ca6ddb04);
+            
+        
+
+        marker_ba4da1d6cdc0d13050c084cf4b72b0f2.bindPopup(popup_157ff9090c33bfb8bd7e6b87cf42982f)
+        ;
+
+        
+    
+    
+            var marker_13c3c12d9a21ba7d57c151e2cb1f9f67 = L.marker(
+                [23.69131, 86.974792],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_ca8e8e8ad7b311e8d015bcdc6327a3d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13c3c12d9a21ba7d57c151e2cb1f9f67.setIcon(icon_ca8e8e8ad7b311e8d015bcdc6327a3d3);
+        
+    
+        var popup_fe4bef7772465ede5a63c08be3451180 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f53879de41cb045939b62a318a5884fc = $(`<div id="html_f53879de41cb045939b62a318a5884fc" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Asansol<br><b>Station Code:</b> ASN</div>`)[0];
+                popup_fe4bef7772465ede5a63c08be3451180.setContent(html_f53879de41cb045939b62a318a5884fc);
+            
+        
+
+        marker_13c3c12d9a21ba7d57c151e2cb1f9f67.bindPopup(popup_fe4bef7772465ede5a63c08be3451180)
+        ;
+
+        
+    
+    
+            var marker_3f3f85270e0078f2414f2cc9821e413d = L.marker(
+                [23.856667, 86.878889],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_fe9fdf62c53539a4cfd93113385934a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f3f85270e0078f2414f2cc9821e413d.setIcon(icon_fe9fdf62c53539a4cfd93113385934a2);
+        
+    
+        var popup_4f4d430c1a561d9aad2366b31ed4a028 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73c329030ca09e1f710a6bae2ce086b4 = $(`<div id="html_73c329030ca09e1f710a6bae2ce086b4" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Chittaranjan<br><b>Station Code:</b> CRJ</div>`)[0];
+                popup_4f4d430c1a561d9aad2366b31ed4a028.setContent(html_73c329030ca09e1f710a6bae2ce086b4);
+            
+        
+
+        marker_3f3f85270e0078f2414f2cc9821e413d.bindPopup(popup_4f4d430c1a561d9aad2366b31ed4a028)
+        ;
+
+        
+    
+    
+            var marker_fbf740379fae1b1e73ac4164c2d9de98 = L.marker(
+                [25.602778, 85.1375],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_958c31828864b51c8b0892aa5645a95a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fbf740379fae1b1e73ac4164c2d9de98.setIcon(icon_958c31828864b51c8b0892aa5645a95a);
+        
+    
+        var popup_552e0a704880dc030159d10058d85070 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6bc695c5d5dd4359a45971776dead954 = $(`<div id="html_6bc695c5d5dd4359a45971776dead954" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Patna<br><b>Station Code:</b> PNBE</div>`)[0];
+                popup_552e0a704880dc030159d10058d85070.setContent(html_6bc695c5d5dd4359a45971776dead954);
+            
+        
+
+        marker_fbf740379fae1b1e73ac4164c2d9de98.bindPopup(popup_552e0a704880dc030159d10058d85070)
+        ;
+
+        
+    
+    
+            var marker_e5b0422aae781169d7c5db388e863323 = L.marker(
+                [22.867061, 88.35395],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_98d1cd5f85d00074d5ff5adacb425aad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e5b0422aae781169d7c5db388e863323.setIcon(icon_98d1cd5f85d00074d5ff5adacb425aad);
+        
+    
+        var popup_990364c27238a2a73b7b0b46a2ba0145 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a1a79a140b6ac816082c5bade37f9cf6 = $(`<div id="html_a1a79a140b6ac816082c5bade37f9cf6" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Chandannagar<br><b>Station Code:</b> CGR</div>`)[0];
+                popup_990364c27238a2a73b7b0b46a2ba0145.setContent(html_a1a79a140b6ac816082c5bade37f9cf6);
+            
+        
+
+        marker_e5b0422aae781169d7c5db388e863323.bindPopup(popup_990364c27238a2a73b7b0b46a2ba0145)
+        ;
+
+        
+    
+    
+            var marker_193064f71a75333ff24f63de23839043 = L.marker(
+                [22.968963, 88.467575],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_5fc60aa7d6335f366badd575512a021d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_193064f71a75333ff24f63de23839043.setIcon(icon_5fc60aa7d6335f366badd575512a021d);
+        
+    
+        var popup_fd89eed44ecdda73a6c8518fd34483d7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8068190749f044b9be6cdd73329e1a64 = $(`<div id="html_8068190749f044b9be6cdd73329e1a64" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Kalyani<br><b>Station Code:</b> KYI</div>`)[0];
+                popup_fd89eed44ecdda73a6c8518fd34483d7.setContent(html_8068190749f044b9be6cdd73329e1a64);
+            
+        
+
+        marker_193064f71a75333ff24f63de23839043.bindPopup(popup_fd89eed44ecdda73a6c8518fd34483d7)
+        ;
+
+        
+    
+    
+            var marker_d4b6482b90d43354ad19806b1e6e4a4d = L.marker(
+                [23.070651, 88.26968],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_0ce35e409caaaa6a2b58ae6ed9c977ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d4b6482b90d43354ad19806b1e6e4a4d.setIcon(icon_0ce35e409caaaa6a2b58ae6ed9c977ea);
+        
+    
+        var popup_8098c79fb485bb07ccf773bbd0cd7f48 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3e94bd88840351250ceeb00748ff3564 = $(`<div id="html_3e94bd88840351250ceeb00748ff3564" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Pundooah<br><b>Station Code:</b> PDA</div>`)[0];
+                popup_8098c79fb485bb07ccf773bbd0cd7f48.setContent(html_3e94bd88840351250ceeb00748ff3564);
+            
+        
+
+        marker_d4b6482b90d43354ad19806b1e6e4a4d.bindPopup(popup_8098c79fb485bb07ccf773bbd0cd7f48)
+        ;
+
+        
+    
+    
+            var marker_92960fd87e500e7a0f87d5733d5b910a = L.marker(
+                [23.7922, 86.4283],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_82912a21d4c6ff25e6888fc9180d6534 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92960fd87e500e7a0f87d5733d5b910a.setIcon(icon_82912a21d4c6ff25e6888fc9180d6534);
+        
+    
+        var popup_08f90643abb4a52cfc44f336069938aa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5bd431b1e39c3a393144af0986f0d8f7 = $(`<div id="html_5bd431b1e39c3a393144af0986f0d8f7" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Dhanbad<br><b>Station Code:</b> DHN</div>`)[0];
+                popup_08f90643abb4a52cfc44f336069938aa.setContent(html_5bd431b1e39c3a393144af0986f0d8f7);
+            
+        
+
+        marker_92960fd87e500e7a0f87d5733d5b910a.bindPopup(popup_08f90643abb4a52cfc44f336069938aa)
+        ;
+
+        
+    
+    
+            var marker_09f567ca9ec77b985aa44bc44afaf5ff = L.marker(
+                [30.8383, 76.9319],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_abf1775821477f5e379e295092bdcf9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09f567ca9ec77b985aa44bc44afaf5ff.setIcon(icon_abf1775821477f5e379e295092bdcf9c);
+        
+    
+        var popup_29fcb226354a68a6d703d4555f7fdd7e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6247255dfdaaa07c656beeeeb7906692 = $(`<div id="html_6247255dfdaaa07c656beeeeb7906692" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Kalka<br><b>Station Code:</b> KLK</div>`)[0];
+                popup_29fcb226354a68a6d703d4555f7fdd7e.setContent(html_6247255dfdaaa07c656beeeeb7906692);
+            
+        
+
+        marker_09f567ca9ec77b985aa44bc44afaf5ff.bindPopup(popup_29fcb226354a68a6d703d4555f7fdd7e)
+        ;
+
+        
+    
+    
+            var marker_52541e1873bda3cabd3b692a620b0eab = L.marker(
+                [22.75412, 88.338588],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_52355f57c093eb7d6c4f16a4a7b813bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_52541e1873bda3cabd3b692a620b0eab.setIcon(icon_52355f57c093eb7d6c4f16a4a7b813bd);
+        
+    
+        var popup_f78fa4be458ea15426b81e3d334eda2e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_57709232df4b1761ce65e27e0e079233 = $(`<div id="html_57709232df4b1761ce65e27e0e079233" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Shrirampur<br><b>Station Code:</b> SRP</div>`)[0];
+                popup_f78fa4be458ea15426b81e3d334eda2e.setContent(html_57709232df4b1761ce65e27e0e079233);
+            
+        
+
+        marker_52541e1873bda3cabd3b692a620b0eab.bindPopup(popup_f78fa4be458ea15426b81e3d334eda2e)
+        ;
+
+        
+    
+    
+            var marker_5551495e001b00da2a3054d0226190cd = L.marker(
+                [22.635719, 88.339814],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_a5461915a945c50ce5ba509b7c30617e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5551495e001b00da2a3054d0226190cd.setIcon(icon_a5461915a945c50ce5ba509b7c30617e);
+        
+    
+        var popup_15e50d42b5e09849c19dd2b783248db9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_32f9a48433b400fe47629858d9d69674 = $(`<div id="html_32f9a48433b400fe47629858d9d69674" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Belur<br><b>Station Code:</b> BEQ</div>`)[0];
+                popup_15e50d42b5e09849c19dd2b783248db9.setContent(html_32f9a48433b400fe47629858d9d69674);
+            
+        
+
+        marker_5551495e001b00da2a3054d0226190cd.bindPopup(popup_15e50d42b5e09849c19dd2b783248db9)
+        ;
+
+        
+    
+    
+            var marker_8fb5167b00ea7159a5d2f7448eefb727 = L.marker(
+                [23.388301, 88.493553],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_f5fe9c54ee01d2cc28eae7991bc90cbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8fb5167b00ea7159a5d2f7448eefb727.setIcon(icon_f5fe9c54ee01d2cc28eae7991bc90cbf);
+        
+    
+        var popup_4adebcbdb4815ba10ce77b032a504000 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c068957fdacea8449d2e583c4aebcdde = $(`<div id="html_c068957fdacea8449d2e583c4aebcdde" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Krishnanagar City<br><b>Station Code:</b> KNJ</div>`)[0];
+                popup_4adebcbdb4815ba10ce77b032a504000.setContent(html_c068957fdacea8449d2e583c4aebcdde);
+            
+        
+
+        marker_8fb5167b00ea7159a5d2f7448eefb727.bindPopup(popup_4adebcbdb4815ba10ce77b032a504000)
+        ;
+
+        
+    
+    
+            var marker_26401e7394d33859cd45dc2c5c5a6294 = L.marker(
+                [22.887602, 88.418096],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_dd7ffaed62fc3c4d67c3d342d2d97ae6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_26401e7394d33859cd45dc2c5c5a6294.setIcon(icon_dd7ffaed62fc3c4d67c3d342d2d97ae6);
+        
+    
+        var popup_25bc54b6b2dbfb7aea7255cb6cfaaa2a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_51c68c55bd5c9c8e38fac9375e55a005 = $(`<div id="html_51c68c55bd5c9c8e38fac9375e55a005" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Naihati<br><b>Station Code:</b> NH</div>`)[0];
+                popup_25bc54b6b2dbfb7aea7255cb6cfaaa2a.setContent(html_51c68c55bd5c9c8e38fac9375e55a005);
+            
+        
+
+        marker_26401e7394d33859cd45dc2c5c5a6294.bindPopup(popup_25bc54b6b2dbfb7aea7255cb6cfaaa2a)
+        ;
+
+        
+    
+    
+            var marker_193322beb97078ce933f4b2b8324e99e = L.marker(
+                [18.9697, 72.8194],
+                {}
+            ).addTo(map_142bea24dabe5f3f72f6c238d1e10a65);
+        
+    
+            var icon_d4de39b22ba9c4eb50192e5a51b7df19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_193322beb97078ce933f4b2b8324e99e.setIcon(icon_d4de39b22ba9c4eb50192e5a51b7df19);
+        
+    
+        var popup_08687ab72ec7dd074144cdd1b4a45477 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_98a9cc23b100d8da2f0eb73afcb90a93 = $(`<div id="html_98a9cc23b100d8da2f0eb73afcb90a93" style="width: 100.0%; height: 100.0%;"><b>Station Name:</b> Mumbai Central<br><b>Station Code:</b> MMCT</div>`)[0];
+                popup_08687ab72ec7dd074144cdd1b4a45477.setContent(html_98a9cc23b100d8da2f0eb73afcb90a93);
+            
+        
+
+        marker_193322beb97078ce933f4b2b8324e99e.bindPopup(popup_08687ab72ec7dd074144cdd1b4a45477)
+        ;
+
+        
+    
+</script>
+</html>
